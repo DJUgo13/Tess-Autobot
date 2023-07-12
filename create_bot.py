@@ -4,7 +4,7 @@ import decouple
 
 
 API_TOKEN = '6266033622:AAGUMkWcATHXAm7h9CvmIloydZfV2FM4A9g'
-Chat_id = "" # Чат, куда будут приходить заявки
+Chat_id = "1685421769" # Чат, куда будут приходить заявки
 
 
 bot = Bot(token=API_TOKEN)
