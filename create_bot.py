@@ -3,7 +3,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 
 API_TOKEN = '6266033622:AAGUMkWcATHXAm7h9CvmIloydZfV2FM4A9g'
-Chat_id = "1685421769" # Чат, куда будут приходить заявки
+Chat_id = "1342601790 " # Чат, куда будут приходить заявки
 
 
 bot = Bot(token=API_TOKEN)

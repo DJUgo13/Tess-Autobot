@@ -26,7 +26,7 @@ conn = sqlite3.connect('db.db')
 def registere_handlers_client(dp: Dispatcher):
     dp.register_message_handler(
         command_start,
-        Text(equals=['/start', '/help', 'start', 'старт'],
+        Text(equals=['/start', '/help', '1'],
              ignore_case=True)
     )
     dp.register_message_handler(
@@ -41,7 +41,7 @@ def registere_handlers_client(dp: Dispatcher):
     )
     dp.register_message_handler(
         cancel_handler1,
-        Text(equals=['/start', '/help', 'start', 'старт', 'Вернуться в меню'],
+        Text(equals=['/start', '/help', 'Вернуться в меню', '1'],
              ignore_case=True),
         state='*'
     )
@@ -51,7 +51,7 @@ def registere_handlers_client(dp: Dispatcher):
     )
     dp.register_message_handler(
         cancel_handler2,
-        Text(equals=['/start', '/help', 'start', 'старт', 'Вернуться в меню'],
+        Text(equals=['/start', '/help', 'Вернуться в меню', '1'],
              ignore_case=True),
         state='*'
     )
@@ -61,7 +61,7 @@ def registere_handlers_client(dp: Dispatcher):
     )
     dp.register_message_handler(
         cancel_handler3,
-        Text(equals=['/start', '/help', 'start', 'старт', 'Вернуться в меню'],
+        Text(equals=['/start', '/help', 'Вернуться в меню', '1'],
              ignore_case=True),
         state='*'
     )
@@ -340,3 +340,6 @@ async def menu(message: types.Message):
         'Выберите пункт меню:',
         reply_markup=kb_client
     )
+
+# бот будет отправлять в нужную группу с курсом
+# написать бот по турестическому при старт выдавать информац

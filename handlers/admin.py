@@ -18,6 +18,8 @@ from keyboards import (
 # ID пользователя можно узнать с помощью бота getmyid_bot
 moderators_ID = {
     1685421769: 'bog',
+    1342601790: 'igor'
+
 }
 
 
@@ -889,3 +891,5 @@ async def finaladd(message: types.Message, state: FSMContext):
         'Выберите пункт меню:',
         reply_markup=kb_admin
     )
+
+# блокировка пользователей по аккаунту
